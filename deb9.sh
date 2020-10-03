@@ -475,7 +475,7 @@ service ssh restart
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 142"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 142 -p 80"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
@@ -621,11 +621,9 @@ mv member.sh member
 mv delete.sh delete
 mv cek.sh cek
 mv restart.sh restart
-mv speedtest.py speedtest
 mv info.sh info
 mv about.sh about
 mv live.sh live
-mv perpanjang.sh perpanjang
 mv cekmemory.py cekmemory
 mv cekport.sh cekport
 mv port.sh port
