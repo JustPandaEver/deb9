@@ -1,4 +1,3 @@
-![Image](/image/v13.png)
 
 ### OS
 * Debian 9
