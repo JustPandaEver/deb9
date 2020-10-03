@@ -6,7 +6,7 @@ echo -e "========================="
 echo -e "| Installing Ruby . . . |"
 echo -e "-------------------------"
 echo -e ""
-apt-get install ruby
+apt-get install ruby -y
 echo -e ""
 
 # Checking Ruby Version
