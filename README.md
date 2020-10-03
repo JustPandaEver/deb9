@@ -13,11 +13,11 @@ apt-get install git
 ```
 **Cloning This Repo**
 ```
-git clone https://github.com/xshin404/tunneling-deb9
+git clone https://github.com/JustPandaEver/deb9
 ```
-**Open Folder "tunneling-deb9" & move deb9.sh to root**
+**Open Folder "deb9" & move deb9.sh to root**
 ```
-cd tunneling-deb9 && mv deb9.sh /root or ..
+cd deb9 && mv deb9.sh /root or ..
 ```
 **Execute Script**
 ```
@@ -46,9 +46,6 @@ chmod +x deb9.sh && ./deb9.sh
 
 ### Web Server
 * Nginx http(s)://$IP:81/
-
-### cPanel Server with Webmin
-* Webmin http(s)://$IP:10000/
 
 ### Time Server
 * Timezone : Asia/Jakarta
