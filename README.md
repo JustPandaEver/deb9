@@ -5,23 +5,7 @@
 ### Install
 **For Update & Upgrade Binary**
 ```
-apt update && apt upgrade -y
-```
-**Download / Install Git**
-```
-apt-get install git
-```
-**Cloning This Repo**
-```
-git clone https://github.com/JustPandaEver/deb9
-```
-**Open Folder "deb9" & move deb9.sh to root**
-```
-cd deb9 && mv deb9.sh /root or ..
-```
-**Execute Script**
-```
-chmod +x deb9.sh && ./deb9.sh
+apt update && apt upgrade -y && apt-get install git -y && git clone https://github.com/JustPandaEver/deb9 && cd deb9 && chmod +x deb9.sh && ./deb9.sh
 ```
 
 ### What's New Version ?
