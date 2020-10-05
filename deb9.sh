@@ -27,6 +27,7 @@ unzip master.zip
 cd lolcat-master/bin
 gem install lolcat
 # Confirm to Install Script
+clear
 read -p "Do you want to install this script ? [Y/n] " Answer
 echo -e ""
 if [[ $Answer =~ ^([yY])$ ]]
@@ -69,8 +70,6 @@ sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="justpandaevers
 sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="PandaEver"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="PandaEver"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_OU=changeme|export KEY_OU=PandaEver|' /etc/openvpn/easy-rsa/vars
-
-
 cp openssl-1.0.0.cnf openssl.cnf
 source ./vars
 ./clean-all
@@ -694,8 +693,6 @@ service openvpn restart
 /etc/init.d/sshd restart
 service dropbear restart
 /etc/init.d/fail2ban restart
-/etc/init.d/stunnel4 restart
-service squid restart
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500
 
