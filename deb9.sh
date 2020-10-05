@@ -702,7 +702,8 @@ port
 success
 restart ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
-
+passwd root
+reboot
 # Confirm Install Script
 else
                 echo -e ""
