@@ -554,6 +554,10 @@ connect = 127.0.0.1:1194
 accept = 2905
 connect = 127.0.0.1:9994
 
+[dropbear]
+accept = 990
+connect = 127.0.0.1:22
+
 END
 
 # Make a Certificate
